@@ -1,5 +1,5 @@
 // Variables para llevar cuenta de los votos
-let votes = { 'Irving': 0, 'Juan Carlos': 0, 'Santos': 0 };
+let votes = { 'Irving': 0, 'Juan': 0, 'Santos': 0 };
 
 // Función para sumar votos y actualizar la tabla
 function addVote(name) {
@@ -15,14 +15,14 @@ function saveVotes() {
 
 // Función para limpiar los votos y actualizar la tabla
 function clearVotes() {
-    votes = { 'Irving': 0, 'Juan Carlos': 0, 'Santos': 0 };
+    votes = { 'Irving': 0, 'Juan': 0, 'Santos': 0 };
     updateTable();
 }
 
 // Función para actualizar la tabla con los votos actuales
 function updateTable() {
     document.getElementById('irvingVotes').innerText = votes['Irving'];
-    document.getElementById('juanCarlosVotes').innerText = votes['Juan Carlos'];
+    document.getElementById('juanVotes').innerText = votes['Juan'];
     document.getElementById('santosVotes').innerText = votes['Santos'];
 }
 
